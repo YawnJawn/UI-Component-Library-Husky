@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+if git diff --cached --name-only | grep -qE 'eslint.config.mjs|\.prettierrc'; then
+  echo "❌ Commit blocked! ESLint or Prettier config files have been modified."
+  exit 1
+fi
+
+npx lint-staged
