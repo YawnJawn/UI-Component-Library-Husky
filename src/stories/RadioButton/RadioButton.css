@@ -1,0 +1,26 @@
+/* RadioButton.css */
+.radio-button {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-button input {
+  margin-right: 8px;
+}
+
+.radio-button input:disabled + .radio-label {
+  color: #888;
+  cursor: not-allowed;
+}
+
+.radio-button input:disabled {
+  cursor: not-allowed;
+}
+
+.radio-button .radio-label {
+  color: black;
+}

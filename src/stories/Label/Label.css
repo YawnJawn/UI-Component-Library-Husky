@@ -1,0 +1,10 @@
+/* Label.css */
+span {
+  font-family: Arial, sans-serif;
+}
+
+span[aria-disabled='true'] {
+  color: gray;
+  opacity: 0.5;
+  cursor: not-allowed;
+}

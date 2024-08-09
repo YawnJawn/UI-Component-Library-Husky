@@ -1,0 +1,13 @@
+/* Dropdown.css */
+.dropdown {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dropdown:disabled {
+  background-color: #f5f5f5;
+  color: #888;
+  cursor: not-allowed;
+}

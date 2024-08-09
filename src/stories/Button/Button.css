@@ -1,0 +1,18 @@
+/* Button.css */
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.button--primary {
+  background-color: blue;
+  color: white;
+}
+
+.button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

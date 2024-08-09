@@ -1,0 +1,11 @@
+/* Text.css */
+p {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+p[aria-disabled='true'] {
+  color: gray;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
