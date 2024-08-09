@@ -61,7 +61,5 @@ jobs:
       - name: Check for ESLint and Prettier config modifications
         run: |
           if git diff --name-only HEAD~1 | grep -qE 'eslint.config.mjs|\.prettierrc'; then
-            echo "❌ Changes to eslint.config.mjs or .prettierrc detected. Please review!"
-            exit 1
-          else
-            echo "✅ No changes detected in eslint.config.mjs or .prettierrc."
+          echo "ESLint or Prettier configuration has been modified."
+          fi

@@ -2,7 +2,7 @@
 FROM node:18
 
 # Create and set working directory
-WORKDIR /Tran_Tin_ui_garden
+WORKDIR /Tran_Tin_ui_garden__build_checks
 
 # Install dependencies
 COPY package*.json ./
@@ -12,7 +12,7 @@ RUN yarn install
 COPY . .
 
 # Expose the port Storybook will run on
-EXPOSE 8083
+EXPOSE 8018
 
 # Command to start Storybook
-CMD ["yarn", "storybook", "dev", "-p", "8083", "--no-open"]
+CMD ["yarn", "storybook", "dev", "-p", "8018", "--no-open"]
